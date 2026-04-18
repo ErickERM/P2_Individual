@@ -1,25 +1,35 @@
 from modelos.libro import Libro
 from modelos.usuario import Usuario
-from servicios.gestorPrestamos import GestorPrestamos
+from servicios.gestor_prestamos import GestorPrestamos
+from modelos.biblioteca import Biblioteca
+from modelos.bibliotecario import Bibliotecario
+from modelos.alumno import Alumno
 
-libro1= Libro("Peppa Pig","Bucanero", "12345")
-libro2= Libro("Teoría de Evolución del ser humano","Jorge el curioso", "12345")
-usuario1= Usuario("Valeria", "2521578")
+#Crear biblioteca
+biblioteca1 = Biblioteca("Biblioteca Central")
 
+#crear bibliotecario
+bibliotecario1 = Bibliotecario("Carlos","B001","IA")
+
+#crear libro
+libro1 = Libro("Peppa Pig","Bucanero","12345")
+libro2 = Libro("Teoria de Evolucion del Ser Humano","Jorge el Curioso","12345")
+
+#Bibliotecario registra libros
+bibliotecario1.registrar_libro(biblioteca1,libro1)
+bibliotecario1.registrar_libro(biblioteca1,libro2)
+
+#Libros disponibles
+biblioteca1.listar_libros()
+
+#crear usuario
+alumno1 = Alumno("Erick","2214991","Alumno")
+
+#Crear Gestor de prestamos
 gestor = GestorPrestamos()
 
-#mensaje = gestor.realizar_prestamo(libro1, usuario1, "2026-03-07")
+#Realizaar prestamo
+gestor.realizar_prestamo(libro1,alumno1,"18-04-2026")
 
-#print(mensaje)
-
-#print (libro1.getDisponibilidad())
-
-#gestor.listar_prestamos()
-
-#print(libro1.getTitulo())
-
-#print(libro1 == libro2)
-
-print("Usuario: " + usuario1)
-
-print(usuario1.getTipoUsuario)
+#Imprimir prestamos
+gestor.listar_prestamos()
