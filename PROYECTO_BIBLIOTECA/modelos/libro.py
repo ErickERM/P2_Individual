@@ -28,3 +28,5 @@ class Libro:
 
     def __eq__(self, otroLibro):
         return self.__titulo == otroLibro.__titulo
+    
+    
