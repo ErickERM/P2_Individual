@@ -16,7 +16,7 @@ class Pedido:
     def calcularTotal(self):
         subtotal = sum(p.getPrecio() * cant for p, cant in self.__productos)
         if self.__cliente.esFrecuente():
-            return self.__cliente.aplicarDescuento(subtotal)  # el cliente calcula su propio descuento
+            return self.__cliente.aplicarDescuento(subtotal)
         return subtotal
 
     def __str__(self):

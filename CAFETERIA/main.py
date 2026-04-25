@@ -22,11 +22,11 @@ cliente1 = Cliente("Erick Mejía", "14991")
 clienteFrecuente1 = ClienteFrecuente("Aixia Garcia", "C002")
 
 pedido1 = Pedido(cliente1, "24-04-2026")
-pedido1.agregarProducto(cafeteria1.productos[1], 1)  # Capuchino
+pedido1.agregarProducto(cafeteria1.productos[1], 1)
 pedido1.agregarProducto(cafeteria1.productos[2], 2) 
 
 pedido2 = Pedido(clienteFrecuente1, "24-04-2026")
-pedido2.agregarProducto(cafeteria1.productos[0], 2)  # Café Americano
+pedido2.agregarProducto(cafeteria1.productos[0], 2)
 pedido2.agregarProducto(cafeteria1.productos[3], 1) 
 
 cafeteria1.agregar_pedido(pedido1)

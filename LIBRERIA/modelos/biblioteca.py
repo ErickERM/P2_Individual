@@ -8,3 +8,6 @@ class Biblioteca:
 
     def obtenerListadoDeLibros(self):
         return self.libros
+    
+    def eliminarLibro(self, libro):
+        self.libros.remove(libro)

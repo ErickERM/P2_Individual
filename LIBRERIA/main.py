@@ -10,6 +10,7 @@ def main():
     
     vista.boton_agregar.config(command= controller.agregar_libro)
     vista.boton_listar_libros.config(command=controller.mostrarLibros)
+    vista.boton_eliminar_libros.config(command=controller.eliminarLibros)
 
     root.mainloop()
 
