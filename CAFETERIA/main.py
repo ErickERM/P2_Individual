@@ -19,7 +19,7 @@ cafeteria1.agregar_producto(Producto("Sándwich Club", 90.00, "Alimentos"))
 cafeteria1.listar_productos()
 
 cliente1 = Cliente("Erick Mejía", "14991")
-clienteFrecuente1 = ClienteFrecuente("Aixia Garcia", "C002")
+clienteFrecuente1 = ClienteFrecuente("Aixia Garcia", "12345")
 
 pedido1 = Pedido(cliente1, "24-04-2026")
 pedido1.agregarProducto(cafeteria1.productos[1], 1)

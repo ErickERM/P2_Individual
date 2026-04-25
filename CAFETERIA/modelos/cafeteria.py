@@ -11,13 +11,13 @@ class Cafeteria:
         self.pedidos.append(pedido)
 
     def listar_productos(self):
-        print(f"\n--- Menú de {self.nombre} ---")
+        print(f"\nMenú de {self.nombre} ")
         for producto in self.productos:
             print(f"  {producto}")
-        print("----------------------------\n")
+        print("\n")
 
     def listar_pedidos(self):
-        print(f"\n--- Pedidos de {self.nombre} ---")
+        print(f"\nPedidos de {self.nombre}")
         for pedido in self.pedidos:
             print(f"  {pedido}")
-        print("--------------------------------\n")
+        print("\n")
