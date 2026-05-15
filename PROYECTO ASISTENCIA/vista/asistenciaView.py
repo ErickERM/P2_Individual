@@ -57,3 +57,7 @@ class AsistenciaView:
 
             ]
         )
+    
+    def agregar_texto(self, texto):
+        return ft.Text(value = texto, size = 16)
+
